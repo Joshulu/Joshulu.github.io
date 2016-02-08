@@ -1,0 +1,48 @@
+header {
+  position: relative;
+
+  bottom: 80%;
+
+  width: 100%;
+  height: 20%;
+  
+  padding: 0%;
+  margin: 0%;
+}
+
+header h1{
+  position: relative;
+  display: block;
+  
+  left: 35%;
+  bottom: 87%;
+  
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+header h2 {
+  position: relative;
+  display: block;
+  
+  bottom: 82%;
+  left: 40%;
+  
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+time {
+  position: relative;
+  display: block;
+  left: 25%;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+main {
+  margin: 0% 5% 5% 0%;
+}
