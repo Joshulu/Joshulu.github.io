@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Arrays and Hashes</title> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head> 
+ 
+  <body> 
+ 
+    <header> 
+      <h1>Arrays and Hashes</h1>
+      <h2>Which is which?</h2> 
+      <time datetime="2016-02-15">Feb 15, 2016</time>
+    </header>
+     
+    <aside>
+      <nav>
+        <ul>
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../index.html">Blogs</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+        </ul>
+        <section>
+          <h4>Social Media</h4>
+          <ul>
+            <li>
+              <a href="">Social<a/>
+            </li>
+            <li>
+              <a href="">Media</a>
+            </li>
+            <li>
+              <a href="">Links</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </aside>
+       
+    <main>
+      <section> 
+        <h4>What is an Array?</h4>
+        <p>
+          An array is a collection of objects(programming objects).  They could be strings, integers, or even other arrays(multi-dimensional arrays).
+        </p>
+        <p>
+          The kind of information an array holds is entirely up to you.  When you define an array, you can put the things you want inside of it.  You can add on to it, or remove from it, later at any time.  It could be all strings, all integers, a mix of any objects you want it to hold.
+        </p>
+        <p>
+          They don't just sit there though.  We can at any time access the elements we placed inside the array.  We do this by using the array's index.  <span>array[0]</span> refers to the 1st element we put in the array.  <span>array[1]</span> is the second.  <span>array[-1]</span> is the last item on the array(no matter the size).  <span>array[-2]</span> would be the second to last element.
+        </p>
+        <p>
+          Arrays are set up to be ordered in the way you added them.  If you remove an element from anywhere but the end, all the rest after the removed element shift down one index.
+        </p>
+        <p>
+          This can get confusing and messy if you're not exactly sure which elements you're moving around and where the rest end up afterwards.  But in Ruby you can use another information container...a hash!
+        </p>
+      </section> 
+      <section>
+        <h4>What is a Hash?</h4>
+        <p>
+          A hash, like an array, is a collection of objects.  Also, like an array, they can be any mixture of objects, and the objects can be access at any time.  The elements are ordered by the order you place them in the hash.
+        </p>
+        <p>
+          However, we don't access them via an index starting from 0 and moving on.  We can, in fact, give the objects their own identifier.  We call them keys, and the objects we call values.  
+        </p>
+      </section>
+      <section>
+        <h4>When to use what?</h4>
+        <p>
+          This section will be fairly short.
+        </p>
+        <p>
+          We can use them for the most part, interchangeably.  However, as I said earlier, using arrays can get messy sometimes.  Generally, use a hash when you have specific important information.  A contact book would be great.  You can use their name as a key, and it points to their phone number.  An array would probably be a better place for something like grocery list of sorts, where specificity isn't needed, and items can be removed from anywhere and it won't much matter.
+        </p>
+      </section>
+    </main> 
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
