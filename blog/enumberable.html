@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Enumerable: Map</title> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head> 
+ 
+  <body> 
+ 
+    <header> 
+      <h1>Enumerable</h1>
+      <h2>Starting off with a #map</h2> 
+      <time datetime="2016-02-22">Feb 22, 2016</time>
+    </header>
+     
+    <aside>
+      <nav>
+        <ul>
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../index.html">Blogs</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+        </ul>
+        <section>
+          <h4>Social Media</h4>
+          <ul>
+            <li>
+              <a href="">Social<a/>
+            </li>
+            <li>
+              <a href="">Media</a>
+            </li>
+            <li>
+              <a href="">Links</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </aside>
+       
+    <main>
+      <section> 
+        <h4>Ruby's Map</h4>
+        <p>
+          Alright everyone, we're delving into programming cartography...but not really.  I do want to talk about maps though, or rather Ruby's #map enumberable.
+        </p>
+        <h4>How To Make A Map</h4>
+        <p>
+          In order to make a map, we need a few things.
+        </p>
+        <p><span>(enum).map { |obj| block }</span></p>
+        <p>
+          So what this means is that, for each object in enum we're going to do block to it.  Once we block it, we return a new array with the results of that block.
+        </p>
+        <ul>
+          <li>
+            enum:  what this is asking for is any one object.  It could be a number, a string, a range, an array, you name it.
+          </li>
+          <li>
+            obj:  This one is sort of a place holder for each individual enum object we iterate through.
+          </li>
+          <li>
+            block:  this is the fun part.  This is where we get to do all the programming magic.  We can say anything we want to happen for each enum.  We can double it, add, concat, delete, anything really.
+          </li>
+        </ul>
+        <h4>Let's try an example:</h4>
+        <p>
+          <span>(1..10).map { |i| i * 5}</span>
+        </p>
+        <p>
+          This returns an array with the following values:
+        </p>
+        <p><span>$ [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]</span></p>
+        <p>
+          If our 1..10 was instead an array of strings, we would return those strings 5 times for each element.
+        </p>
+        <p><span>$ ["catcatcatcatcat", "dogdogdogodgodg"]</span></p>
+        
+      </section>
+    </main> 
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
