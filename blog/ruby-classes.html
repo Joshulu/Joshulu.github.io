@@ -81,8 +81,9 @@
         </p>
         <p>
           So let's use some code now:
-          
-          <span>
+        </p>
+        <p>
+          <pre><code>
             class Computer
               def initialize
               end
@@ -108,11 +109,12 @@
             my_pc.save_file(cat_picture.gif)
             my_pc.search_self(cat_picture.gif)
             my_pc.retrieve_file(cat_picture.gif)
-          </span>
-          
-          All the stuff from 'class Computer' until the 'end'
+          </code></pre>
+        </p>
+        <p>
+          All the stuff from <code>class Computer</code> until the <code>end</code>
            at the bottom is the class definition for Computer.
-           All the 'def ...' are our methods we can use on an
+           All the <code>'def ...'</code> are our methods we can use on an
            instance of our class (Just like array.each).
            After our class definition we have some, what we
            would call, driver code.  It runs our class
@@ -126,11 +128,11 @@
         </p>
         <h4>Computer Varialbes</h4>
         <p>
-          In Ruby, when we have a variable <span>x = 5</span>
-           for example, our code only knows that x = 5 where
+          In Ruby, when we have a variable <code>x = 5</code>
+           for example, our code only knows that <code>x = 5</code> where
            it was defined.  If we look at a couple methods
            of our Computer class below:
-          <span>
+          <pre><code>
             def save_file
             @saved_file = "filename"
             x = 5
@@ -140,17 +142,17 @@
             print @saved_file
             x = 6
             end
-          </span>
+          </code></pre>
           
           We have a couple things going on.  We have an
-           <span>x = 5</span>
-           a <span>@saved_file = "filename"</span>
-           and a <span>x = 6</span>.
+           <code>x = 5</code>
+           a <code>@saved_file = "filename"</code>
+           and a <code>x = 6</code>.
            
           Normally, our x in our save_file method stays there.
            So our other x in retrieve_file does not overwrite
            our first x.  In no way do they interfere with one
-           another.  However, for our <span>@saved_file</span>
+           another.  However, for our <code>@saved_file</code>
            variable, we ARE accessing it in our #retrieve_file
            method.  That @ symbol out in front of the variable
            tells Ruby, "This variable is an instance variable,
