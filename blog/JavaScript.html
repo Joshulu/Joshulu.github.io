@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>JavaScript v. Ruby</title> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head> 
+ 
+  <body> 
+ 
+    <header> 
+      <h1>Object v. Hash</h1>
+      <h2>Peanut Butter v. Jam</h2> 
+      <time datetime="2016-03-07">Mar 7, 2016</time>
+    </header>
+     
+    <aside>
+      <nav>
+        <ul>
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="./index.html">Blogs</a>
+          </li>
+          <li>
+            <a href="../projects/index.html">Portfolio</a>
+          </li>
+        </ul>
+        <section>
+          <h4>Social Media</h4>
+          <ul>
+            <li>
+              <a href="">atwfaj@gmail.com<a/>
+            </li>
+            <li>
+              <a href="http://www.facebook.com/toastbones">Facebook</a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/Joshulu">LinkedIn</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </aside>
+       
+    <main>
+      <section> 
+        <h4>JavaScript and Ruby Sandwich</h4>
+        <p>
+          Just to get that inkling of "What's this about PB&J?" out of your heads, what I mean is: Personally I'm not very fond of peanut butter.  Don't get me wrong I like it, but I like jam more.  JavaScript, right now, is the thick, stick to the roof of your mouth, hardy peanut butter that gives you some nutrition.  Ruby, on the other hand, is the fruity, sweet, and syntactic-sugary jam.
+        </p>
+        <p>
+          The internet needs Peanut Butter to work as well as it does today.  But I'd much prefer a Nutella.  It's pretty much too far gone to replace entirely and tradition says I should keep just eating my PB&J.  Of course I will.
+        </p>
+        <h4>Object v. Hash</h4>
+        <p>
+          Now that we've gotten weird personal preference metaphors
+          out of the way...
+        </p>
+        <p>
+          What are JavaScript Objects and Ruby Hashes?
+          
+          Well they're a collection of things.  They can be similar in that a Hash has a series of user created keys, that point to user created values.
+        </p>
+        <p>
+          There are a couple differences here but for the most part they are quite the same.  You can even add on to each of them after defining them.  They use different means to do so, but they can be dynamically altered.
+        </p>
+        <h4>The Difference</h4>
+        <p>
+          Now that we've seen how they're the same thing, let's discuss why they aren't the same thing.
+        </p>
+        <p>
+          Well that's really difficult to do.  The main difference I've found is how you call to them.
+        </p>
+        <p>
+          In JavaScript the object is a variable itself.  You would define and call it as:
+          <pre><code>
+            //define
+            var object_name = {property_1: value_1, property_2: value_2, property_n: value_n};
+            
+            //get value
+            return object_name.property_n;
+            
+            // => value_n
+          </code></pre>
+        </p>
+        <p>
+          In Ruby however, the hash object is not a variable.  You would define and call it as:
+          <pre><code>
+            //define
+            hash_name = {:key_1 => value_1, key_2: value_2, "key_n" => value_n}
+            
+            //get value
+            hash_name["key_n"]
+            
+            // => value_n
+          </code></pre>
+          The differences here are key_1 and key_2 are both symbols, using different syntax.  Both are acceptable ways.  The "key_n" string is also a key.  Keys can be strings or symbols.  When calling a symbol however, it must be written as <code>hash_name[:key_name]</code>.  The colon must appear before the key name.  It just looks nicer in the hash_name definition, so they allowed it to work that way.
+        </p>
+        <h4>Summary</h4>
+        <p>
+          If I was able to teach you anything about JS objects vs. Ruby hashes, it's that objects are: variables, 'keys' are called properties and can also be strings, and those properties have values.  And that hashes are: not variables, keys can be symbols or strings, and keys point to values.
+        </p>
+        <p>
+          If I was able to teach you anything about anything, it's that I like Jam more than Peanut Butter and as of my first week learning JavaScript: I like Ruby more!
+        </p>
+      </section>
+    </main> 
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
