@@ -78,7 +78,11 @@
           In JavaScript the object is a variable itself.  You would define and call it as:
           <pre><code>
             //define
-            var object_name = {property_1: value_1, property_2: value_2, property_n: value_n};
+            var object_name = {
+              property_1: value_1,
+              property_2: value_2,
+              property_n: value_n
+            };
             
             //get value
             return object_name.property_n;
@@ -90,7 +94,11 @@
           In Ruby however, the hash object is not a variable.  You would define and call it as:
           <pre><code>
             //define
-            hash_name = {:key_1 => value_1, key_2: value_2, "key_n" => value_n}
+            hash_name = {
+              :key_1 => value_1,
+              key_2: value_2,
+              "key_n" => value_n
+            }
             
             //get value
             hash_name["key_n"]
