@@ -1,0 +1,43 @@
+main {
+  position: absolute;
+  
+}
+
+#seperate {
+  display: block;
+  position: static;
+  float: ;
+}
+
+#static {
+  position: static;
+  background-color: purple;
+  display: block;
+}
+
+#relative {
+  position: relative;
+  left: 50px;
+  background-color: red;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+#absolute {
+  position: absolute;
+  right: 60%;
+  top: 60%;
+  background-color: green;
+  display: box;
+  height: 40%;
+  width: 40%;
+}
+
+#fixed {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  background-color: yellow;
+  display: block;
+}
